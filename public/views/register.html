@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>/auth/register</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/auth.css" />
+    <script src="/js/auth.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="site-brand" id="homeBtn">
+        <div class="brand-icon">
+          <img src="/img/logo.svg" alt="logo" class="logo" />
+        </div>
+        <div class="brand-label">Ideas manager</div>
+      </div>
+    </header>
+    <main>
+      <form id="register-form" post>
+        <h2>Rejestracja</h2>
+        <input type="text" name="email" placeholder="email.." required />
+        <input type="text" name="login" placeholder="login.." required />
+        <input type="text" name="password" placeholder="hasło.." required />
+        <button type="submit">Zarejestruj</button>
+        <span class="third-color bold">
+          Masz już konto?
+          <a href="/auth/login"> kliknij tutaj</a>
+        </span>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2d2d2a;
+  color: white;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.site-brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4em;
+  transition: all 0.3s ease;
+}
+
+.site-brand:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  color: #bb7c34;
+}
+
+.logo {
+  max-width: 30px;
+}
+
+.brand-label {
+  font-size: 22px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 20px;
+  background-color: #1e3a2e;
+  border: #5c5c57 1px solid;
+  border-radius: 20px;
+}
+
+input {
+  background-color: #1e3a2e;
+  font-size: 20px;
+  color: white;
+  border: #5c5c57 1px solid;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+button {
+  background-color: #1e3a2e;
+  font-size: 20px;
+  color: white;
+  border: #5c5c57 1px solid;
+  border-radius: 20px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #2d2d2a;
+  cursor: pointer;
+}
+
+a {
+  color: rgb(58, 58, 255);
+}
+
+a:hover {
+  color: white;
+}
+
+.main-color {
+  color: #1a1a18;
+}
+
+/* tekst drugorzędny (opisy, paragrafy) */
+.secondary-color {
+  color: #5c5c57;
+}
+
+/* tekst trzeciorzędny (labels, daty, placeholdery) */
+.third-color {
+  color: #9b9b96;
+}
+
+.bold {
+  font-weight: 800;
+}

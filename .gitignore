@@ -1,0 +1,54 @@
+# Node modules
+
+node_modules/
+
+# Env files (tajne dane)
+
+.env
+.env.*
+
+# Logs
+
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System files
+
+.DS_Store
+Thumbs.db
+
+# Build / output
+
+dist/
+build/
+
+# Temporary files
+
+tmp/
+temp/
+
+# IDE / edytory
+
+.vscode/
+.idea/
+
+# Coverage (testy)
+
+coverage/
+
+# Optional: lock files (jeśli nie chcesz commitować)
+
+# package-lock.json
+
+# yarn.lock
+
+# PDF / wygenerowane pliki CV
+
+*.pdf
+
+# Uploads (jeśli dodasz w przyszłości)
+
+uploads/
