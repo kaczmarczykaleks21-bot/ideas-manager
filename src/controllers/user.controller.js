@@ -30,7 +30,7 @@ exports.getUser = async (req, res) => {
   } catch (err) {}
 };
 
-// 🔥 CREATE IDEA
+// CREATE IDEA
 
 exports.createUser = async (req, res) => {
   try {

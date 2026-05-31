@@ -1,9 +1,30 @@
+:root {
+  /* Tła */
+  --color-bg-body: #2d2d2a;
+  --color-bg-dark: #252522;
+  --color-bg-darkest: #1a1a18;
+  --color-bg-greenboard: #1e3a2e;
+
+  /* Tekst */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #9b9b96;
+  --color-text-third: #5c5c57;
+
+  /* Akcenty */
+  --color-accent-green: #386a55;
+  --color-accent-brand: #bb7c34;
+  --color-accent-brown: #5c3d1a;
+
+  /* Obramowania */
+  --color-border-mid: #858580;
+  --color-border-sub: #5c5c57;
+}
+
 html,
 body {
   height: 100%;
   width: 100%;
   margin: 0;
-  padding: 0;
 }
 
 html {
@@ -11,7 +32,7 @@ html {
 }
 
 body {
-  background-color: #2d2d2a;
+  background-color: var(--color-bg-body);
   color: white;
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 600;
@@ -46,7 +67,7 @@ header {
 .site-brand:hover {
   opacity: 0.8;
   cursor: pointer;
-  color: #bb7c34;
+  color: var(--color-accent-brand);
 }
 
 .logo {
@@ -75,14 +96,14 @@ header {
 }
 
 .rightside-header li {
-  border: 1px solid #858580;
+  border: 1px solid var(--color-border-mid);
   border-radius: 10px;
   padding: 6px;
   transition: all 0.3s ease;
 }
 
 .rightside-header li:hover {
-  background-color: #252522;
+  background-color: var(--color-bg-dark);
   cursor: pointer;
 }
 
@@ -143,7 +164,7 @@ main {
   align-items: center;
   flex-direction: row;
 
-  border: #5c5c57 1px solid;
+  border: var(--color-text-third) 1px solid;
   border-radius: 10px;
   width: 60%;
 }
@@ -162,18 +183,18 @@ main {
 }
 
 .middle-steps {
-  border-left: #5c5c57 1px solid;
-  border-right: #5c5c57 1px solid;
+  border-left: var(--color-text-third) 1px solid;
+  border-right: var(--color-text-third) 1px solid;
 }
 
 .numbers {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #858580;
-  border: #858580 solid 1px;
+  background-color: var(--color-border-mid);
+  border: var(--color-border-mid) solid 1px;
   border-radius: 100px;
-  color: #252522;
+  color: var(--color-bg-dark);
   max-width: 20px;
 }
 
@@ -212,7 +233,7 @@ main {
 
 .subsections3 {
   padding: 20px;
-  border: #5c5c57 1px solid;
+  border: var(--color-text-third) 1px solid;
   border-radius: 20px;
 }
 
@@ -229,8 +250,8 @@ main {
 }
 
 .section4-container {
-  background-color: #1e3a2e;
-  border: #1e3a2e 1px solid;
+  background-color: var(--color-bg-greenboard);
+  border: var(--color-bg-greenboard) 1px solid;
   border-radius: 20px;
   padding: 20px;
   display: flex;
@@ -246,9 +267,9 @@ main {
   width: 40%;
 }
 .section4-container button {
-  background-color: #1e3a2e;
+  background-color: var(--color-bg-greenboard);
   color: white;
-  border: 1px solid #858580;
+  border: 1px solid var(--color-border-mid);
   border-radius: 10px;
   transition: all 0.3s ease;
   padding: 10px;
@@ -256,14 +277,14 @@ main {
 }
 
 .section4-container button:hover {
-  background-color: #252522;
+  background-color: var(--color-bg-dark);
   cursor: pointer;
 }
 
 button {
-  background-color: #2d2d2a;
+  background-color: var(--color-bg-body);
   color: white;
-  border: 1px solid #858580;
+  border: 1px solid var(--color-border-mid);
   border-radius: 10px;
   transition: all 0.3s ease;
   padding: 6px;
@@ -271,12 +292,12 @@ button {
 }
 
 button:hover {
-  background-color: #252522;
+  background-color: var(--color-bg-dark);
   cursor: pointer;
 }
 
 hr {
-  color: #5c5c57;
+  color: var(--color-text-third);
   width: 80%;
 }
 
@@ -289,7 +310,7 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border-top: #5c5c57 solid 2px;
+  border-top: var(--color-text-third) solid 2px;
 }
 
 .leftside-footer {
@@ -304,7 +325,7 @@ footer ul {
 }
 
 footer li {
-  color: #858580;
+  color: var(--color-border-mid);
   font-weight: bold;
   transition: all 0.3s ease;
 }
@@ -315,7 +336,7 @@ footer li:hover {
 }
 
 .year {
-  color: #858580;
+  color: var(--color-border-mid);
   font-weight: bold;
 }
 
@@ -385,29 +406,29 @@ p {
 
 /* główny tekst (nagłówki, body) */
 .main-color {
-  color: #1a1a18;
+  color: var(--color-bg-darkest);
 }
 
 /* tekst drugorzędny (opisy, paragrafy) */
 .secondary-color {
-  color: #5c5c57;
+  color: var(--color-text-third);
 }
 
 /* tekst trzeciorzędny (labels, daty, placeholdery) */
 .third-color {
-  color: #9b9b96;
+  color: var(--color-text-secondary);
 }
 
 .greenboard-color {
-  color: #1e3a2e;
+  color: var(--color-bg-greenboard);
 }
 
 .green-color {
-  color: #386a55;
+  color: var(--color-accent-green);
 }
 
 .brown-color {
-  color: #5c3d1a;
+  color: var(--color-accent-brown);
 }
 
 /* #endregion */
@@ -415,11 +436,11 @@ p {
 /* #region Kolory tła */
 
 .background-darkgrey {
-  background-color: #252522;
+  background-color: var(--color-bg-dark);
 }
 
 .background-greenboard {
-  background-color: #1e3a2e;
+  background-color: var(--color-bg-greenboard);
 }
 
 /* #endregion */
@@ -492,6 +513,6 @@ p {
 }
 
 .border-leftright {
-  border-left: #5c5c57 1px solid;
-  border-right: #5c5c57 1px solid;
+  border-left: var(--color-text-third) 1px solid;
+  border-right: var(--color-text-third) 1px solid;
 }
