@@ -2,8 +2,8 @@
 console.log('auth.js');
 
 // ID Przycisków
-const homeBtn = document.getElementById('homeBtn');
+const goHome = document.getElementById('goHome');
 
-homeBtn.addEventListener('click', () => {
+goHome.addEventListener('click', () => {
   window.location.href = '/';
 });

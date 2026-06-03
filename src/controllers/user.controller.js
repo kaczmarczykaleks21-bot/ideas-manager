@@ -1,15 +1,16 @@
-const User = require('../models/usersModel');
+const User = require('../models/users.model');
+const usersModel = require('../models/users.model');
 
 // GET ALL USERS
 
 exports.getAllUsers = async (req, res) => {
   try {
-    const ideas = await Idea.find({ user: req.user.id });
+    const users = await User.find();
 
-    res.stauts(200).json({
+    res.status(200).json({
       status: 'success',
-      results: ideas.length,
-      data: ideas,
+      results: users.length,
+      data: users,
     });
   } catch (err) {
     res.status(500).json({
@@ -27,25 +28,17 @@ exports.getUser = async (req, res) => {
       status: 'success',
       data: user,
     });
-  } catch (err) {}
-};
-
-// CREATE IDEA
-
-exports.createUser = async (req, res) => {
-  try {
-    const newIdea = await Idea.create({
-      title: req.body.title,
-      description: req.body.description,
-      user: req.user.id,
-    });
   } catch (err) {
-    res.status(400).json({
-      status: 'fail',
+    res.status(500).json({
+      status: 'error',
       message: err.message,
     });
   }
 };
+
+// CREATE IDEA
+
+exports.createUser = async (req, res) => {};
 
 exports.modifyUser = async (req, res) => {};
 

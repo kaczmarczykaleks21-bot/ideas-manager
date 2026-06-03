@@ -1,1 +1,12 @@
-const User = require('../models/usersModel');
+const User = require('../models/users.model');
+
+exports.signup = async (req, res, next) => {
+  const newUser = await User.create(req.body);
+
+  res.status(201).json({
+    status: 'success',
+    data: {
+      user: newUser,
+    },
+  });
+};

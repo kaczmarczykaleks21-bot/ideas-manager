@@ -15,7 +15,6 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Email is required'],
     unique: true,
-    trim: true,
     lowercase: true,
     validate: [validator.isEmail, 'Please provide a valid email'],
   },
@@ -23,16 +22,12 @@ const UserSchema = new mongoose.Schema({
   password: {
     type: String,
     required: [true, 'Password is required'],
-    trim: true,
     maxlength: [14, 'Password is too long, 14 characters max'],
-    minlength: [6, 'Password is too short, 6 characters min'],
+    minlength: [8, 'Password is too short, 8 characters min'],
   },
   passwordConfirm: {
     type: String,
     required: [true, 'Password confirmation is required'],
-    trim: true,
-    maxlength: [14, 'Password confirmation is too long, 14 characters max'],
-    minlength: [6, 'Password confirmation is too short, 6 characters min'],
   },
 });
 
